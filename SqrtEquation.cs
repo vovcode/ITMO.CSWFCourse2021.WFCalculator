@@ -32,5 +32,32 @@ namespace SimpleCalculator
             ans2 = (-1 * b - Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a);
             ansOut.Text = "Первый корень: " + ans1.ToString() + "; " + "Второй корень: " + ans2.ToString();
         }
+
+        private void tb_a_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != '-') && (e.KeyChar != '+'))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле должно содержать цифры");
+            }
+        }
+
+        private void tb_b_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != '-') && (e.KeyChar != '+'))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле должно содержать цифры");
+            }
+        }
+
+        private void tb_c_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && (e.KeyChar != (char)Keys.Back) && (e.KeyChar != '-') && (e.KeyChar != '+'))
+            {
+                e.Handled = true;
+                MessageBox.Show("Поле должно содержать цифры");
+            }
+        }
     }
 }

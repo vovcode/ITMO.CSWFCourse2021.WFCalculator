@@ -73,10 +73,11 @@ namespace SimpleCalculator
             // 
             // tb_a
             // 
-            this.tb_a.Location = new System.Drawing.Point(127, 60);
+            this.tb_a.Location = new System.Drawing.Point(128, 60);
             this.tb_a.Name = "tb_a";
             this.tb_a.Size = new System.Drawing.Size(51, 20);
             this.tb_a.TabIndex = 4;
+            this.tb_a.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_a_KeyPress);
             // 
             // tb_b
             // 
@@ -84,6 +85,7 @@ namespace SimpleCalculator
             this.tb_b.Name = "tb_b";
             this.tb_b.Size = new System.Drawing.Size(51, 20);
             this.tb_b.TabIndex = 5;
+            this.tb_b.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_b_KeyPress);
             // 
             // label4
             // 
@@ -101,6 +103,7 @@ namespace SimpleCalculator
             this.tb_c.Name = "tb_c";
             this.tb_c.Size = new System.Drawing.Size(51, 20);
             this.tb_c.TabIndex = 7;
+            this.tb_c.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tb_c_KeyPress);
             // 
             // ansOut
             // 
